@@ -15,6 +15,11 @@ android {
         versionCode = 1
         versionName = "1.0.0"
     }
+kotlin {
+    compilerOptions {
+        jvmTarget.set(org.jetbrains.kotlin.gradle.dsl.JvmTarget.JVM_17)
+    }
+}
 
     buildTypes {
         release {
@@ -29,9 +34,6 @@ android {
         targetCompatibility = JavaVersion.VERSION_17
     }
     
-    kotlinOptions {
-        jvmTarget = "17"
-    }
 }
 
 flutter {
